@@ -1,0 +1,123 @@
+
+<!--contener al menos 3 selectores que hagan referencia a clases-->
+
+<!--debe contener al menos 2 selectores que hagan referencia a elementos de la página a través de su id-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Débora Peña </title>
+    <link rel="icon" href="user-circle-solid.svg">
+    <link rel="stylesheet" href="estilosPortafolio.css" type="text/css">
+    
+</head>
+<body>
+<!--Barra de Navegacion-->
+<div class="barra">
+   <nav > <!--Primera y      segunda  class-->
+     <ul class="horizontal">
+          <!-- llamando Id creando marcador-->
+        
+         <li><a href="#inicio"> <img src="home-solid.svg" alt="home" width="25px" height="25px">Inicio </a></li> 
+         
+         <li><a href="#acercaDeMi"><img src="user-solid.svg" alt="usuario" width="20px" height="20px">Acerca de Mi </a></li>
+         <li><a href="portafoliopagProyectos.html" target="_blank"><img src="folder-open-solid.svg" alt="carpeta" width="20px" height="20px">Proyectos</a></li>
+         <li><a href="#contacto"><img src="map-signs-solid.svg" alt="flechas" width="20px" height="20px">Contacto</a></li>
+     </ul>
+  </nav>
+</div>
+<div id="inicio" class="bloques">
+ <!-- Primer ID, tercera class-->
+ <h1>Débora Judit Peña Núñez</h1>
+ <h3>Futuro Desarrollador Web en proceso</h3>
+
+ <img src="sinSonrisa.jpg" alt="Debora sin sonrisa" title="Débora Peña" width="128" height="160">
+  <!--La página debe contener al menos una imagen-->
+ <img src="Sonriente.jpg" alt="Debora con Sonrisa" title="Débora Peña" width="225" height="300">
+</div>
+<div id="acercaDeMi" class="bloques"> 
+     <!-- Segundo ID-->
+     <!-- Quien soy-->
+     <h2>Quien soy</h2>
+     <p> Mi nombre es Débora Peña, <b>soy estudiante</b> y <b>aspiro</b> en un futuro no muy lejano <b>trabajar en el mundo IT</b>.</p>
+     <p> Hace un par de años que tuve mi primer contacto con este gran <b>mundo</b>, recuerdo que nos dijeron que lo que veíamos era tan solo la punta de ese gran Icerberg <b>por descubrir</b>. En ese momento mi curiosidad despertó y también mi interés.</p> 
+     <p> En estos siguientes años he tratado de <b>aprovechar mi tiempo y los recursos disponibles</b> a mi alcance. Al transcurrir el tiempo más descubro y me encanta, como también me impresiona y  me doy cuenta que hay mucho por aprender y hacer. <b>Se que hay lugar para todos, solo estoy esperando encontrar el mio</b>. Ahora <b>decido esperar</b> de la mejor manera,<b> preparandome para ese dia.</b> </p>
+     <br>
+     <br>
+  
+   <h2>Perfil Profesional en formación</h2>
+  <div> <!-- Soft-skills-->
+     <p class="skill">Soft-Skills</p> 
+     <!--Tercera class--> 
+     <ul>
+        <li>Inglés A2</li>
+       <li>Experimentando trabajar en equipo en Jovenes a Programar</li>
+       <li>Fortaleciendo mi autogestión, disciplina y  responsabilidad en cursos autodidactas</li>
+       <li>Conociendo y trabajando competencias tranversales</li>
+     </ul>
+  </div>
+ <div><!-- Hard-skills-->
+     <p class="skill">Hard-Skills</p>
+     <ul>
+         <li>Desarrollo Front-end</li>
+         <li>HTML</li>
+         <li>Css</li>
+         <li>JavaScript</li>
+     </ul>
+    <br>
+    <br>
+     <table>
+        <tr>
+        <th>Certificación Hard-Skills</th>
+        <th>Año </th>
+        </tr>
+        <tr>
+        <td><a href="certificadoHabilidades.pdf" target="_blank">Habilidades Digitales para la empleabilidad</a></td>
+        <td>2021</td>
+        </tr>
+        <tr>
+    <td><a href="certificadoDesarrollo.pdf" target="_blank">Desarrollador Front-end</a></td>
+    <td>2022</td>
+        </tr>
+        <tr>
+        <td><a href="certificadoNext.pdf" target="_blank">Next Level: Diseña tu primer Videojuego</a></td>
+        <td>2022</td>
+        </tr>
+        <tr>
+        <td><a href="#">Jovenes a Programar Fase 1 Nivel 1</a></td>
+        <td>2023</td>
+        </tr>
+        <tr>
+        <td><a href="#">Jovenes a Programar Fase 2 Nivel 1</a></td>
+        <td>Proximamente</td>
+        </tr>
+      </table>
+    </div>
+</div>
+<div id="contacto" class="bloques">
+  <h2>Contacto</h2>
+  <p class="contact">Puedes contactarme</p>
+ <form action="debo4978@gmail.com">
+    <label for="mensaje">Enviame tu mensaje:</label>
+    <textarea name="mensaje" id="mensaje" cols="20" rows="5" placeholder="Estimada Debora..."></textarea>
+    <label for="Asunto">Asunto</label>
+    <input type="text" id="Asunto" placeholder="Oportunidad Laboral">
+    <label for="nombre">Tu Nombre:</label>
+    <input type="text" id="nombre" autocomplete="on" placeholder="Abc Ecba">
+    <label for="email">Tu Email</label>
+    <input type="email" id="email" autocomplete="on" placeholder="abc@correoelectronico.com" required>
+    <input type="submit" value="Enviar">
+  </form>
+
+ <p class="contact">Encuentrame también</p> <!--Cuarta class-->
+ <a href="https://www.linkedin.com/in/debora-pe%C3%B1a-nu%C3%B1ez2001/" target="_blank"><button><img src="linkedin.svg" alt="logo" width="20" height="20" style="padding: 1px;">Linkedin</button></a>
+ <a href="https://github.com/deborasoy" target="_blank"><button><img src="github.svg" alt="logo" width="20" height="20" style="padding: 1px;">Github</button></a>
+ <a href="https://wa.me/qr/XVU73KJVPUIMI1" target="_blank"><button><img src="whatsapp.svg" alt="logo" width="20" height="20" style="padding: 1px">WhatsApp</button></a>
+  
+</div>
+
+</body>
+</html>
