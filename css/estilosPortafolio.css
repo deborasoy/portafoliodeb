@@ -1,0 +1,146 @@
+/*Debes crear todo el código CSS en una hoja de estilos externa*/
+
+/*El código CSS debe contener al menos 3 selectores que hagan referencia a clases*/
+
+/* El código CSS debe contener al menos 2 selectores que hagan referencia a elementos de la página a través de su id*/
+
+/*selectores class que tiene la hoja de estilo: barra, horizontal, bloques, skill,contact
+selectores id que tiene la hoja de estilo: inicio, acercaDeMi, contacto*/
+
+/*Barra de Navegacion: Horizontal*/
+.horizontal a{ 
+    display:block;/*al ser una etiqueta in-line, necesitaba cambiar la forma de verla, que ocupe toda la linea o largo(block)*/
+    text-align: center;
+    text-decoration: none; /*quitar el subrayado*/
+    padding: 20px, 20px;
+    color:black;
+    margin:0px;
+    font-size:larger;
+    width:250px; ;
+    height: 25px ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.barra {
+    background-color: rgb(108, 127, 145);
+    position: fixed; /* la barra quede fija y al navegar en la pagina, la barra vaya con el usuario*/
+}
+.horizontal li {
+    float: left; /*para hacer que sea una barra horizontal no vertical, floten los elementos a la izquierda y quede uno al lado del otro, no uno sobre el otro*/
+    list-style-type: none; /*para quitar los puntos o etiquetas de las listas, dejarla sin efectos*/
+
+}
+/*efectos  pseudoclases*/
+.horizontal a:active {
+    background-color:rgb(108, 108, 134);
+}
+.horizontal a:visited{
+    color:white;
+}
+.horizontal a:hover{
+    background-color: rgb(160, 179, 240);
+}
+ /*Bloques que son: Inicio, Acerca de MI y Contactos, comparten estilos, como todos los subtitulos son iguales*/
+
+.bloques{ 
+    padding:70px;
+    margin: auto;
+}
+.bloques > h2 { /*los h2 hijos de la clase bloques*/
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-style: oblique;
+   text-align: center;
+   color:aliceblue
+}
+
+/*Inicio*/
+
+#inicio {
+   background-image: 
+      url(../img/imagFondo.jog.jpeg);
+      background-size: cover;
+      color:rgb(213, 235, 255);
+    font-family:'Times New Roman', Times, serif;
+}
+    
+#inicio h1{
+ 
+ text-decoration: overline;/*Linea de decoracion ensima del texto*/
+ font-size: 3em;
+ }
+/*acerca de mi*/
+ #acercaDeMi{
+    background-color: rgb(173, 195, 216);
+
+ }
+ #acercaDeMi p{
+    text-align: justify; 
+ }
+
+ .skill{ /*los subtitulos de Skills comparten estilo, al tener misma clase*/
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ p+ul{ /* ul exactamente al lado de un p. Cambie forma de ver las etiquetas o puntos a la lista desordenada*/
+    list-style-type:square;
+    text-align: justify
+ }
+table{
+    border-collapse: collapse;
+    text-align: center;
+    line-height: 30px;
+    border: solid;
+    border-color: aliceblue;
+  
+
+}
+tr, th, td{
+    border: solid;
+    border-color: aliceblue;
+        
+        
+}
+/*Contactos*/
+.contact{ /*Subtitulos*/
+    font-size:larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    }
+
+#contacto {
+  background-image:
+  url(../img/img2fondo.jpg);
+  background-size: cover;
+  text-align: left;
+}
+
+form input, textarea, label{
+    display: block;
+}
+
+form input:focus, textarea:focus{
+    background-color:gray;
+}
+
+#contacto button{
+   text-align: center;
+    width: 250px;
+
+}
+
+#contacto a{
+    text-decoration: none;
+    color: black;
+}
+
+#contacto button:hover{
+    background-color: gray;
+}
+
+
+
+
+
+
+
+
+
